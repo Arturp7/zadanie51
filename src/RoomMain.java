@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 public class RoomMain {
     public static void main(String[] args) {
-        Room room =  new Room(18, true, 15);
+        Scanner in = new Scanner(System.in);
+        System.out.println("Podaj actualną temperaturę w stopniach Celsjusza w liczbach całkowitych");
+        int actTemp = in.nextInt();
+
+        Room room =  new Room(actTemp, true, 15);
 
         room.coolRom();
         System.out.println(room.coolRom());
